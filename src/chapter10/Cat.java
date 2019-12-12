@@ -6,9 +6,11 @@ public class Cat extends Animal {
     private boolean fivPos;
 
     // Subclass must always call a superclass constructor
-    public Cat(String name, int age) {
+    public Cat(String name, int age, boolean fivPos) {
         // Call to superclass constructor must be first line in constructor
         super(name, age);
+        // Don't forget to store Cat's unique field
+        this.fivPos = fivPos;
     }
 
     public boolean isFivPos() {

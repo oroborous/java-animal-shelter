@@ -2,7 +2,7 @@ package chapter10;
 
 // Abstract classes cannot be instantiated
 // i.e. You can't say Animal a = new Animal();
-public abstract class Animal {
+public class Animal {
     private String name;
     private int age;
 
@@ -25,5 +25,10 @@ public abstract class Animal {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return name + " (Animal, age " + age + ")";
     }
 }
